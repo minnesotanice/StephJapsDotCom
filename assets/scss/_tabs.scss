@@ -1,0 +1,22 @@
+/*
+Tab style
+*/
+.about-tabs{
+    padding-bottom: 40px;
+    li {
+        a{
+            font-family: $title-font;
+            text-transform: capitalize;
+            font-size: 1.7rem;
+            display: block;
+            border-bottom: 2px solid transparent;
+            padding: 10px 0;
+            color:#999;
+            font-weight: 600;
+        }
+        &.active a{
+            color:$skin-color;
+            border-bottom-color: $skin-color;
+        }
+    }
+}
