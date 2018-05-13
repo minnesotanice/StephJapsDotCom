@@ -16,7 +16,11 @@ $('.versa-contact').submit(function() {
 		
 		$.ajax({ // Send an offer process with AJAX
 			type: 'POST',
-			url: 'contact_form_2/process-contact.php',
+
+			// sjaps - this file path doesn't exist
+			// url: 'contact_form_2/process-contact.php',
+			url: 'process-contact.php',
+
 			data: submitData + '&action=add',
 			dataType: 'html',
 			success: function(msg){
